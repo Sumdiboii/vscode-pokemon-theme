@@ -1,8 +1,8 @@
 {
   "name": "pokemon-classic-dark",
-  "displayName": "Pokémon Classic Dark",
-  "description": "A vibrant Pokémon-inspired dark theme for Visual Studio Code.",
-  "version": "1.0.0",
+  "displayName": "Pokémon Classic Light",
+  "description": "A high-contrast Pokémon-inspired light theme for Visual Studio Code.",
+  "version": "1.1.0",
   "publisher": "pokemon-classic",
   "license": "MIT",
   "engines": {
@@ -19,21 +19,21 @@
     "color-theme"
   ],
   "galleryBanner": {
-    "color": "#181a20",
-    "theme": "dark"
+    "color": "#E3350D",
+    "theme": "light"
   },
   "contributes": {
     "themes": [
       {
-        "label": "Pokémon Classic Dark",
-        "uiTheme": "vs-dark",
+        "label": "Pokémon Classic Light",
+        "uiTheme": "vs",
         "path": "./themes/pokemon-color-theme.json"
       }
     ]
   },
   "scripts": {
     "package": "vsce package",
-    "validate": "node -e \"const fs=require('fs'); const pkg=JSON.parse(fs.readFileSync('package.json','utf8')); const theme=JSON.parse(fs.readFileSync('themes/pokemon-color-theme.json','utf8')); if (pkg.contributes.themes[0].path !== './themes/pokemon-color-theme.json' || theme.name !== 'Pokémon Classic Dark') process.exit(1); console.log('Theme manifest and theme JSON are valid.');\""
+    "validate": "node -e \"const fs=require('fs'); const pkg=JSON.parse(fs.readFileSync('package.json','utf8')); const theme=JSON.parse(fs.readFileSync('themes/pokemon-color-theme.json','utf8')); if (pkg.contributes.themes[0].path !== './themes/pokemon-color-theme.json' || theme.name !== 'Pokémon Classic Light') process.exit(1); console.log('Theme manifest and theme JSON are valid.');\""
   },
   "devDependencies": {
     "@vscode/vsce": "^3.6.0"

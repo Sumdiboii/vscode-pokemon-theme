@@ -1,0 +1,40 @@
+Please completely rewrite and replace the current color scheme in "pokemon-color-theme.json". We are changing it from a dark theme to a high-contrast Pokémon Classic light theme based on Pokéball Red, Pure White, and retro Game Boy Grey. Do not use orange at all. Change the "uiTheme" in package.json to "vs" (light theme mode).
+
+Use these exact Hex Codes:
+- Pokéball Red: #E3350D
+- Pure White: #FFFFFF
+- Light Game Boy Grey: #D8D8D8
+- Muted Grey-Silver: #A4A4A4
+- Deep Charcoal: #1A1A1A
+- Dark Charcoal Grey: #333333
+- Rich Pikachu Gold: #C59B00
+
+Apply the colors exactly as follows to prevent any text contrast clashes:
+
+1. Workspace UI (colors):
+   - editor.background: Light Game Boy Grey (#D8D8D8)
+   - editor.foreground: Deep Charcoal (#1A1A1A)
+   - sideBar.background: Pokéball Red (#E3350D)
+   - sideBar.foreground: Pure White (#FFFFFF)
+   - sideBarTitle.foreground: Pure White (#FFFFFF)
+   - activityBar.background: Pokéball Red (#E3350D)
+   - activityBar.foreground: Pure White (#FFFFFF)
+   - activityBar.activeBorder: Pure White (#FFFFFF)
+   - tab.activeBackground: Pokéball Red (#E3350D)
+   - tab.activeForeground: Pure White (#FFFFFF)
+   - tab.inactiveBackground: #B0B0B0 
+   - tab.inactiveForeground: #555555
+   - statusBar.background: Pure White (#FFFFFF)
+   - statusBar.foreground: Deep Charcoal (#1A1A1A)
+   - titleBar.activeBackground: Pokéball Red (#E3350D)
+   - titleBar.activeForeground: Pure White (#FFFFFF)
+
+2. Code Syntax (tokenColors):
+   Ensure all text inside the editor window is highly readable against the light grey (#D8D8D8) background. Do not use White text here.
+   - Keywords (if, return, const, function): Pokéball Red (#E3350D)
+   - Variables, Properties, and Constants: Deep Charcoal (#1A1A1A)
+   - Functions & Methods: Dark Charcoal Grey (#333333)
+   - Strings: Rich Pikachu Gold (#C59B00) for high readability
+   - Comments: Muted Grey-Silver (#A4A4A4)
+
+Please update all theme files, verify the light theme configurations, and automatically run the package command to generate a fresh .vsix file.
