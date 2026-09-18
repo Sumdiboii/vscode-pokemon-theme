@@ -1,0 +1,7 @@
+.gitignore
+.vscode/**
+*.vsix
+node_modules/**
+npm-debug.log
+pnpm-debug.log
+yarn.lock
