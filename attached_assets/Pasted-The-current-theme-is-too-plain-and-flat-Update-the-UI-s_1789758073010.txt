@@ -1,0 +1,22 @@
+The current theme is too plain and flat. Update the UI styling to look aesthetically appealing, vibrant, and polished while maintaining a clean, minimalist Game Boy light-mode theme. Use strategic color pops and subtle retro hardware details from the palette below so the app feels modern rather than sterile.
+
+Apply these exact color tokens and UI component overrides across the entire application CSS/styling configuration:
+
+### 1. Color Palette Tokens
+- --bg-main: #F0F0EA (Game Boy Shell Light Gray - Main editor background)
+- --bg-sidebar: #E4E4DC (Classic Handheld Matte - Sidebar, panels, headers, idle tabs)
+- --text-primary: #2B2D42 (Charcoal Belt Black - High-contrast body text)
+- --accent-red: #9E1B1B (Deep Crimson - Active tabs, status bar, primary button highlights)
+- --accent-gold: #D99B26 (Pikachu Gold - Active line numbers, focus rings, warnings)
+- --border-color: #9E9E94 (D-Pad Gray - Crisp 1px panel splitters and element frames)
+- --syntax-green: #4A7C59 (Comments/Strings)
+- --syntax-blue: #2B6CB0 (Methods/Types)
+- --syntax-purple: #6B46C1 (Keywords/Control Flow)
+
+### 2. UI Component & Polish Rules
+- Canvas & Panels: Set editor background to #F0F0EA and sidebar/headers to #E4E4DC. Ensure distinct 1px solid borders (#9E9E94) surround all major panels (explorer, editor, terminal) to create a retro handheld casing frame.
+- Sidebar File Tree: Set 'list.activeSelectionBackground' to #9E1B1B with #FFFFFF text. Set hover background to #E0E0D8 and inactive selection to #D8D8D0. Add subtle padding and crisp icon alignment to stop the file tree from looking barren.
+- Tab Bar Aesthetics: Active tabs must have background #F0F0EA with a bold 2px top border in Deep Crimson (#9E1B1B). Inactive tabs stay #E4E4DC with subtle right borders (#9E9E94).
+- Anchored Status Bar: Style the bottom status bar in full Deep Crimson (#9E1B1B) with crisp white (#FFFFFF) text to anchor the entire layout like the lower band of a Pokéball.
+- Micro-Interactions & Accents: Use Pikachu Gold (#D99B26) for active line numbers, cursor color, and active focus outlines. Style buttons with a crisp Deep Crimson fill or border so interactive elements clearly pop.
+- Typography: Keep text crisp in Charcoal (#2B2D42), completely avoiding pure black (#000000) or washed-out gray.

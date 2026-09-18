@@ -9,7 +9,7 @@ A minimal, Game Boy-inspired Pokémon light color theme for Visual Studio Code.
 | Main editor background | `#F0F0EA` |
 | Sidebar and panels | `#E4E4DC` |
 | Primary text | `#2B2D42` |
-| Active states and cursor | `#C83833` |
+| Active states and cursor | `#9E1B1B` |
 | Highlights and active line numbers | `#D99B26` |
 | Borders and dividers | `#9E9E94` |
 | Comments and strings | `#4A7C59` |

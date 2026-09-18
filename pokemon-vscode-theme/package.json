@@ -2,7 +2,7 @@
   "name": "pokemon-classic-dark",
   "displayName": "Pokémon Classic Light",
   "description": "A minimal, Game Boy-inspired Pokémon light theme for Visual Studio Code.",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "publisher": "pokemon-classic",
   "license": "MIT",
   "engines": {
@@ -19,7 +19,7 @@
     "color-theme"
   ],
   "galleryBanner": {
-    "color": "#E3350D",
+    "color": "#9E1B1B",
     "theme": "light"
   },
   "contributes": {
