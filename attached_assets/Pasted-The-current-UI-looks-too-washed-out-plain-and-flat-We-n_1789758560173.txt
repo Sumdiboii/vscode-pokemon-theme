@@ -1,0 +1,28 @@
+The current UI looks too washed out, plain, and flat. We need to inject a creative, tasteful "Pokédex / Game Boy hardware" aesthetic using our specific color palette. The goal is an industrial, retro-tech vibe that is visually striking but remains minimalist and completely usable for daily coding. 
+
+Apply these exact UI layout changes and color mappings to the CSS/theme configuration:
+
+### 1. The "Pokédex Chassis" (The L-Frame)
+- Leftmost Vertical Strip (Activity Bar): Make the background completely solid Deep Crimson (#9E1B1B). Set active icons to pure White (#FFFFFF) and inactive icons to a faded/translucent white. 
+- Notification Badges: Set badge backgrounds on the Activity Bar to Pikachu Gold (#D99B26) with Charcoal text (#2B2D42) to act like little LED lights on the hardware casing.
+- Bottom Status Bar: Keep this solid Deep Crimson (#9E1B1B) with White text (#FFFFFF). 
+*This frames the left and bottom of the screen in red, perfectly mimicking the casing of a Pokédex.*
+
+### 2. Panel Gaps & Hardware Depth
+- Sidebar (File Explorer): Background remains Classic Handheld Matte (#E4E4DC). 
+- Editor Canvas: Background remains Game Boy Shell Light Gray (#F0F0EA).
+- Sharp "Plastic" Borders: To mimic physical hardware panels, add a crisp, solid 1px Charcoal Belt Black (#2B2D42) or D-Pad Gray (#9E9E94) border between the Sidebar and the Editor Canvas, and beneath the Top Header/Tabs. 
+
+### 3. Active States & "Screen" Elements
+- Tab Bar: Idle tabs should blend into the #E4E4DC background. The active tab should match the editor (#F0F0EA) but give it a bold 2px Pikachu Gold (#D99B26) or Deep Crimson (#9E1B1B) top-border so it pops aggressively like an active screen tab.
+- File Tree Selection: Stop making it invisible or gray. Set the 'list.activeSelectionBackground' to Great Ball Azure (#2B6CB0) or a soft Deep Crimson with #FFFFFF text. Give the hover state a distinct Game Boy tint (#D8D8D0).
+- Typography: All text in the editor and file tree must be Charcoal Belt Black (#2B2D42) for crisp readability. 
+
+### 4. Code Syntax (The Data Screen)
+Ensure the syntax highlighting pops cleanly against the #F0F0EA background:
+- Strings/Comments: Grass Green (#4A7C59)
+- Methods/Built-ins: Great Ball Azure (#2B6CB0)
+- Keywords/Logic: Master Ball Violet (#6B46C1)
+- Active Line Number: Pikachu Gold (#D99B26)
+
+Make the app look engineered, vibrant, and hardware-inspired, removing the flat, sterile beige feeling entirely.
