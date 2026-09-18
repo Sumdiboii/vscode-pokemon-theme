@@ -1,41 +1,33 @@
 {
-  "name": "pokemon-classic-dark",
-  "displayName": "Pokémon Classic Light",
-  "description": "A minimal, Game Boy-inspired Pokémon light theme for Visual Studio Code.",
-  "version": "1.4.0",
-  "publisher": "pokemon-classic",
+  "name": "gameboy-pokemon-theme",
+  "displayName": "Game Boy Pokémon Light Theme",
+  "description": "A minimal, retro handheld-inspired light theme with Deep Crimson chassis framing and Pikachu Gold accents.",
+  "version": "1.0.0",
+  "publisher": "sumedhpimplikar",
+  "author": {
+    "name": "Sumedh Pimplikar",
+    "url": "https://sumedhpimplikar.vercel.app/"
+  },
+  "homepage": "https://sumedhpimplikar.vercel.app/",
   "license": "MIT",
   "engines": {
-    "vscode": "^1.85.0"
+    "vscode": "^1.80.0"
   },
   "categories": [
     "Themes"
   ],
-  "keywords": [
-    "theme",
-    "light",
-    "pokemon",
-    "vibrant",
-    "color-theme"
-  ],
-  "galleryBanner": {
-    "color": "#9E1B1B",
-    "theme": "light"
-  },
+  "icon": "icon.png",
   "contributes": {
     "themes": [
       {
-        "label": "Pokémon Classic Light",
+        "label": "Game Boy Pokémon Light",
         "uiTheme": "vs",
-        "path": "./themes/pokemon-color-theme.json"
+        "path": "./themes/gameboy-pokemon-color-theme.json"
       }
     ]
   },
   "scripts": {
-    "package": "vsce package",
-    "validate": "node -e \"const fs=require('fs'); const pkg=JSON.parse(fs.readFileSync('package.json','utf8')); const theme=JSON.parse(fs.readFileSync('themes/pokemon-color-theme.json','utf8')); if (pkg.contributes.themes[0].path !== './themes/pokemon-color-theme.json' || theme.name !== 'Pokémon Classic Light') process.exit(1); console.log('Theme manifest and theme JSON are valid.');\""
-  },
-  "devDependencies": {
-    "@vscode/vsce": "^3.6.0"
+    "package": "npx @vscode/vsce package --allow-missing-repository",
+    "validate": "node -e \"const fs=require('fs'); const pkg=JSON.parse(fs.readFileSync('package.json','utf8')); const theme=JSON.parse(fs.readFileSync('themes/gameboy-pokemon-color-theme.json','utf8')); const contribution=pkg.contributes.themes[0]; if (contribution.label !== 'Game Boy Pokémon Light' || contribution.uiTheme !== 'vs' || contribution.path !== './themes/gameboy-pokemon-color-theme.json' || theme.type !== 'light') process.exit(1); console.log('Publish manifest and theme JSON are valid.');\""
   }
 }

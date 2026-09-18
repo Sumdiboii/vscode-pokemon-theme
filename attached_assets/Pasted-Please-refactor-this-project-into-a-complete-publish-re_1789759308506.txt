@@ -1,0 +1,59 @@
+Please refactor this project into a complete, publish-ready VS Code Theme Extension and apply our refined Game Boy / Pokédex color scheme.
+
+### 1. Extension File Structure & Configuration
+- Create a `themes/` folder and place the theme JSON file at `themes/gameboy-pokemon-color-theme.json`.
+- Create a `package.json` at the root with these exact fields:
+  {
+    "name": "gameboy-pokemon-theme",
+    "displayName": "Game Boy Pokémon Light Theme",
+    "description": "A minimal, retro handheld-inspired light theme with Deep Crimson chassis framing and Pikachu Gold accents.",
+    "version": "1.0.0",
+    "publisher": "sumedhpimplikar",
+    "author": {
+      "name": "Sumedh Pimplikar",
+      "url": "https://sumedhpimplikar.vercel.app/"
+    },
+    "homepage": "https://sumedhpimplikar.vercel.app/",
+    "engines": { "vscode": "^1.80.0" },
+    "categories": ["Themes"],
+    "icon": "icon.png",
+    "contributes": {
+      "themes": [{
+        "label": "Game Boy Pokémon Light",
+        "uiTheme": "vs",
+        "path": "./themes/gameboy-pokemon-color-theme.json"
+      }]
+    }
+  }
+- Generate a polished `README.md` introducing the "Game Boy Pokémon Light" theme created by Sumedh Pimplikar, showcasing the Pokédex hardware aesthetic, detailing the color palette, and linking to the portfolio at https://sumedhpimplikar.vercel.app/.
+
+### 2. Design & Color Palette Rules
+Apply these exact tokens inside `themes/gameboy-pokemon-color-theme.json`:
+
+Tokens:
+- Main Canvas: #F0F0EA (Game Boy Shell Gray)
+- Panels/Sidebar: #E4E4DC (Matte Handheld Gray)
+- Primary Text: #2B2D42 (Charcoal Black)
+- Primary Accent: #9E1B1B (Deep Crimson)
+- Secondary Accent: #D99B26 (Pikachu Gold)
+- Borders: #9E9E94 (D-Pad Gray)
+- Syntax Green: #4A7C59 (Comments/Strings)
+- Syntax Blue: #2B6CB0 (Methods/Types)
+- Syntax Purple: #6B46C1 (Keywords/Control Flow)
+
+UI Rules:
+1. Pokédex L-Chassis:
+   - Leftmost Strip (activityBar.background): Solid Deep Crimson (#9E1B1B). Set active icons to #FFFFFF and inactive icons to translucent white. Set notification badges (activityBarBadge.background) to Pikachu Gold (#D99B26) with Charcoal text (#2B2D42).
+   - Bottom Bar (statusBar.background): Solid Deep Crimson (#9E1B1B) with #FFFFFF text.
+2. Panels & Canvas:
+   - Editor background: #F0F0EA.
+   - Sidebar background: #E4E4DC.
+   - 1px solid borders (#9E9E94) between all major panels.
+3. Selections & Tabs:
+   - Sidebar File Selection (list.activeSelectionBackground): Deep Crimson (#9E1B1B) with #FFFFFF text. Hover state: #E0E0D8.
+   - Active Tab: #F0F0EA with a 2px top border in Deep Crimson (#9E1B1B).
+   - Inactive Tabs: #E4E4DC.
+   - Active line numbers & cursor: Pikachu Gold (#D99B26).
+
+### 3. Git Initialization
+Once files are created and updated, initialize git if not already present (`git init`), stage all files (`git add .`), and create an initial commit (`git commit -m "Prepare VS Code Theme Extension v1.0.0 for publication"`).

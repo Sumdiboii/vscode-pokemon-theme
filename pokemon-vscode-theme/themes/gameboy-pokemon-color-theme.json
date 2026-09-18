@@ -1,6 +1,6 @@
 {
   "$schema": "vscode://schemas/color-theme",
-  "name": "Pokémon Classic Light",
+  "name": "Game Boy Pokémon Light",
   "type": "light",
   "colors": {
     "focusBorder": "#D99B26",
@@ -105,7 +105,7 @@
     "tab.activeBackground": "#F0F0EA",
     "tab.activeForeground": "#9E1B1B",
     "tab.activeBorder": "#9E1B1B",
-    "tab.activeBorderTop": "#D99B26",
+    "tab.activeBorderTop": "#9E1B1B",
     "tab.inactiveBackground": "#E4E4DC",
     "tab.inactiveForeground": "#2B2D42",
     "tab.unfocusedActiveForeground": "#9E1B1B",
@@ -113,13 +113,13 @@
     "tab.border": "#9E9E94",
     "tab.unfocusedActiveBorder": "#9E9E94",
 
-    "list.activeSelectionBackground": "#2B6CB0",
+    "list.activeSelectionBackground": "#9E1B1B",
     "list.activeSelectionForeground": "#FFFFFF",
     "list.inactiveSelectionBackground": "#D8D8D0",
     "list.inactiveSelectionForeground": "#2B2D42",
     "list.focusBackground": "#E0E0D8",
     "list.focusForeground": "#2B2D42",
-    "list.hoverBackground": "#D8D8D0",
+    "list.hoverBackground": "#E0E0D8",
     "list.hoverForeground": "#2B2D42",
     "list.highlightForeground": "#9E1B1B",
     "list.focusOutline": "#D99B26",
