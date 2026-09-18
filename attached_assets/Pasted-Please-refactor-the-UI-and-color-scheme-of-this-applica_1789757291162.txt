@@ -1,0 +1,25 @@
+Please refactor the UI and color scheme of this application to create a light-mode, Game Boy-inspired Pokémon theme. The design should be minimal, clean, and easy on the eyes, avoiding harsh pure whites and glaring neon reds.
+
+Apply the following exact design system and color palette across the entire application CSS/styling tokens:
+
+### 1. Color Palette Tokens
+Define these base colors as global CSS variables (or Tailwind custom colors):
+- --bg-main: #F0F0EA (Game Boy Shell Light Gray - Main editor/workspace background)
+- --bg-sidebar: #E4E4DC (Classic Handheld Matte - Sidebar, panels, tab bars)
+- --text-primary: #2B2D42 (Charcoal Belt Black - High-contrast readable body text)
+- --accent-red: #C83833 (Pokéball Crimson - Primary focal accent for active states)
+- --accent-gold: #D99B26 (Pikachu Gold - Secondary accent for active line numbers/highlights)
+- --border-color: #9E9E94 (D-Pad Gray - Subtle panel splitters and element borders)
+- --syntax-green: #4A7C59 (Comments/Strings)
+- --syntax-blue: #2B6CB0 (Methods/Types)
+- --syntax-purple: #6B46C1 (Keywords/Control flow)
+
+### 2. UI Component Instructions
+- Workspace & Main Background: Set the main content background to `#F0F0EA`. Do NOT use pure white (`#FFFFFF`).
+- Sidebar & Header Panels: Set all sidebars, navigation bars, headers, and idle tab backgrounds to `#E4E4DC`.
+- Accent Rules: Use `#C83833` (Pokéball Crimson) sparingly for active tab indicators (e.g., top border or active text highlight), cursor, or active status indicators. Do NOT flood large background panels with red.
+- Text & Typography: Update all body text and UI labels to `#2B2D42`. Ensure no text uses pure `#000000`.
+- Borders & Dividers: Set all panel borders, tab dividers, and grid lines to `#9E9E94` with a 1px solid style for a retro hardware feel.
+- Code Editor / Syntax (if applicable): Style code syntax tokens using `--syntax-green`, `--syntax-blue`, and `--syntax-purple`, ensuring line highlights use a soft tint (`#E7E7DF`).
+
+Please update the styling across all relevant CSS, Tailwind configuration, or component files while keeping all existing functionality fully intact.

@@ -1,19 +1,20 @@
 # Pokémon Classic Light
 
-A high-contrast Pokémon-inspired light color theme for Visual Studio Code.
+A minimal, Game Boy-inspired Pokémon light color theme for Visual Studio Code.
 
 ## Included palette
 
 | Role | Color |
 | --- | --- |
-| Main editor background | `#D8D8D8` |
-| Sidebar and Activity Bar | `#E3350D` with `#FFFFFF` icons |
-| Tabs and title bar | `#E3350D` with `#FFFFFF` text |
-| Status Bar | `#FFFFFF` with `#1A1A1A` text |
-| Variables, properties, and constants | `#1A1A1A` |
-| Functions and methods | `#333333` |
-| Strings | `#C59B00` |
-| Comments | `#A4A4A4` |
+| Main editor background | `#F0F0EA` |
+| Sidebar and panels | `#E4E4DC` |
+| Primary text | `#2B2D42` |
+| Active states and cursor | `#C83833` |
+| Highlights and active line numbers | `#D99B26` |
+| Borders and dividers | `#9E9E94` |
+| Comments and strings | `#4A7C59` |
+| Methods and types | `#2B6CB0` |
+| Keywords and control flow | `#6B46C1` |
 
 ## Package the extension
 
